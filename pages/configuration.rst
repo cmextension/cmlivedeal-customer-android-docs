@@ -40,7 +40,7 @@ However, the application uses the data on `our demo site <http://livedealdemo.cm
 Try with your own site
 ^^^^^^^^^^^^^^^^^^^^^^
 
-To connect the application to your Joomla!, you need to modify some settings in app/src/main/java/vn/cmext/cmlivedeal/Constants.java
+To connect the application to your Joomla!, you need to modify some settings in app/src/main/java/vn/cmext/cmlivedealcustomer/Constants.java
 
 .. image:: ../images/settings.jpg
 
