@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Configuration &mdash; CMLiveDeal Customer Android Mobile Application 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="CMLiveDeal Customer Android Mobile Application 0.0.1 documentation" href="../index.html" />
+    <link rel="prev" title="Requirements &amp; Downloads" href="requirements.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="requirements.html" title="Requirements &amp; Downloads"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">CMLiveDeal Customer Android Mobile Application 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="configuration">
+<h1>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="cm-mobile">
+<h2>CM Mobile<a class="headerlink" href="#cm-mobile" title="Permalink to this headline">¶</a></h2>
+<p>Please check <a class="reference external" href="http://cm-mobile.readthedocs.org/en/latest/pages/configuration.html">CM Mobile&#8217;s documentation</a> for how to confige CM Mobile.</p>
+<p>The following settings need to be applied the same in CM Live Deal Customer application: HTTP request method, Allowed user agent, Secret key.</p>
+</div>
+<div class="section" id="cm-live-deal-customer-android-application">
+<h2>CM Live Deal Customer Android application<a class="headerlink" href="#cm-live-deal-customer-android-application" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="first-setup">
+<h3>First setup<a class="headerlink" href="#first-setup" title="Permalink to this headline">¶</a></h3>
+<p>After downloading the ZIP file of the project from our website, you extract the file on your component and open the project with your Android Studio. For example, with Android Studio&#8217;s startup dialog, you select &#8220;Open an existing Android Studio project&#8221;.</p>
+<img alt="../_images/startup_dialog.jpg" src="../_images/startup_dialog.jpg" />
+<p>The project is linked to our Android SDK on our computer so Android Studio will detect that the path to our computer&#8217;s Android SDK doesn&#8217;t exist on your component, it will automatically sync the project with your computer&#8217;s Android SDK.</p>
+<img alt="../_images/sync_sdk.jpg" src="../_images/sync_sdk.jpg" />
+<p>Android Studio will check and updating required libraries in background tasks, you need to wait until the tasks are finished.</p>
+<img alt="../_images/background_tasks.jpg" src="../_images/background_tasks.jpg" />
+<p>There could be some additional tasks depending on your Android Studio. For example you may need to install Build Tools 20.0.0 if you use an older version.</p>
+<img alt="../_images/sync_glade.jpg" src="../_images/sync_glade.jpg" />
+<p>Now you can try the application with emulator or with your real Android device.</p>
+<img alt="../_images/emulator.jpg" src="../_images/emulator.jpg" />
+<p>However, the application uses the data on <a class="reference external" href="http://livedealdemo.cmext.vn/">our demo site</a>, please check the next section to know how to connect with your Joomla! website.</p>
+</div>
+<div class="section" id="try-with-your-own-site">
+<h3>Try with your own site<a class="headerlink" href="#try-with-your-own-site" title="Permalink to this headline">¶</a></h3>
+<p>To connect the application to your Joomla!, you need to modify some settings in app/src/main/java/vn/cmext/cmlivedeal/Constants.java</p>
+<img alt="../_images/settings.jpg" src="../_images/settings.jpg" />
+<p>You need to change SITE_URL variable to your site&#8217;s URL. The URL must contain &#8220;index.php&#8221; at the end.</p>
+<p>If in CM Mobile&#8217;s configuration, you use GET method, you set METHOD variable to 1. But if you use POST, you set the variable to 2.</p>
+<p>Set USER_AGENT variable to the string you use for &#8220;Allowed user agent&#8221; option in CM Mobile&#8217;s configuration.</p>
+<p>Set SECRET_KEY variable to the string you use for &#8220;Secret key&#8221; option in CM Mobile&#8217;s configuration.</p>
+<p>You can try the application again, it should connect to your Joomla! and get the data from your CM Live Deal now.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Configuration</a><ul>
+<li><a class="reference internal" href="#cm-mobile">CM Mobile</a></li>
+<li><a class="reference internal" href="#cm-live-deal-customer-android-application">CM Live Deal Customer Android application</a><ul>
+<li><a class="reference internal" href="#first-setup">First setup</a></li>
+<li><a class="reference internal" href="#try-with-your-own-site">Try with your own site</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="requirements.html"
+                        title="previous chapter">Requirements &amp; Downloads</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/pages/configuration.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="requirements.html" title="Requirements &amp; Downloads"
+             >previous</a> |</li>
+        <li><a href="../index.html">CMLiveDeal Customer Android Mobile Application 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, CMExtension.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>
