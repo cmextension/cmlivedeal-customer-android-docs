@@ -10,6 +10,8 @@ CM Live Deal is a Joomla! component for providing free coupons developed by `CME
 
 Customer Android mobile application for CM Live Deal gives customers ability to browser for deals right on their mobile devices, capture coupons and redeem coupons at merchants.
 
+This documentation is for version 0.0.1 of CM Live Deal Customer application for Android.
+
 Contents:
 
 .. toctree::

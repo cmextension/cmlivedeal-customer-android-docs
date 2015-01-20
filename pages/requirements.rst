@@ -4,6 +4,18 @@ Requirements & Downloads
 
 In order to work with CM Live Deal Customer Android application and make it connect to your Joomla! website, you need Android Stuido IDE and CM Mobile Joomla! component.
 
+You can use any version of Android Studio, but it is recommended to use the latest verion.
+
+Please refer to the below table for compatible versions of CM Live Deal and CM Mobile.
+
++----------------------+-------------+-----------+
+| Customer Android app | CM Live Deal| CM Mobile |
++======================+=============+===========+
+| 0.0.1                | 1.2.1       | 0.0.4     |
++----------------------+-------------+-----------+
+
+For example, if you use Customer Android application version 0.0.1, you will need to use it together with CM Live Deal 1.2.1 and CM Mobile 0.0.4.
+
 Android Studio
 --------------
 

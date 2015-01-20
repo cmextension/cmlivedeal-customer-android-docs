@@ -52,4 +52,4 @@ Set USER_AGENT variable to the string you use for "Allowed user agent" option in
 
 Set SECRET_KEY variable to the string you use for "Secret key" option in CM Mobile's configuration.
 
-You can try the application again, it should connect to your Joomla! and get the data from your CM Live Deal, now you can start customizing the application to make it suite your needs.
+You can try the application again, it should connect to your Joomla! and get the data from your CM Live Deal, now you can start customizing the application to suit your needs.
